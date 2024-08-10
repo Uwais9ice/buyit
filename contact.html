@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyit - About-us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Social Media Icons -->
+            <div class="social-media-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+
+            <!-- Bootstrap Navbar for Mobile and Desktop -->
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Stylish Text Link Logo -->
+            <a href="home.html" class="logo">Buyit</a>
+         <!-- Navigation Links -->
+         <div class="nav-links custom-nav">
+            <a href="home.html" class="nav-link custom-link">Shop</a>
+            <a href="phone.html" class="nav-link custom-link">Phones</a>
+            <a href="laptops.html" class="nav-link custom-link">laptops</a>
+            <a href="home-appliances.html" class="nav-link custom-link">home-appliances</a>
+            <a href="Accessories.html" class="nav-link custom-link">Accessories</a>
+        </div>
+        
+            <!-- Search Bar and Icons -->
+            <div class="header-icons d-flex align-items-center">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Profile Icon -->
+                <div class="profile-icon ml-3" data-toggle="modal" data-target="#profileModal">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <!-- Wishlist Icon -->
+                <div class="wishlist-icon ml-3">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <!-- Cart Icon -->
+                <div class="cart-icon ml-3" data-toggle="modal" data-target="#cartModal">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!-- Breadcrumb -->
+ <nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </div>
+</nav>
+
+    <!-- Profile Modal -->
+<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="profileModalLabel">Login / Create Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Tabs for Login and Registration -->
+                <ul class="nav nav-tabs" id="profileTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="profileTabContent">
+                    <!-- Login Form -->
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="loginEmail">Email address</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <!-- Register Form -->
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="registerName">Full Name</label>
+                                <input type="text" class="form-control" id="registerName" placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail">Email address</label>
+                                <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Password</label>
+                                <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerConfirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="checkout-btn" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Page -->
+<section class="contact-us-section">
+    <div class="contact-us-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2 class="contact-title">Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <h3>Our Address</h3>
+                        <p>1234 Electronics St., Tech City, TX 56789</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>(+234) 123-456-7890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:support@buyit.com">support@buyit.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2 class="contact-title">Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+ document.addEventListener('DOMContentLoaded', function () {
+    let cart = [];
+
+    function updateCartDisplay() {
+        const cartModalBody = document.querySelector('#cartModal .modal-body');
+        cartModalBody.innerHTML = ''; // Clear existing cart content
+
+        let totalPrice = 0; // Initialize total price
+
+        if (cart.length === 0) {
+            cartModalBody.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            cart.forEach(product => {
+                const itemTotal = product.price * product.quantity;
+                totalPrice += itemTotal; // Update total price
+
+                cartModalBody.innerHTML += `
+                    <div class="cart-item" data-product-id="${product.id}">
+                        <img src="${product.image}" alt="${product.name}" class="cart-item-image">
+                        <div class="cart-item-details">
+                            <h5>${product.name}</h5>
+                            <p>₦${product.price}</p>
+                            <p>Total: ₦${itemTotal}</p>
+                            <input type="number" value="${product.quantity}" min="1" class="quantity-input">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Display the total price
+            cartModalBody.innerHTML += `
+                <div class="cart-total">
+                    <h5>Total Price: ₦${totalPrice}</h5>
+                </div>
+            `;
+        }
+    }
+
+    function addToCart(product) {
+        const existingProduct = cart.find(item => item.id === product.id);
+        if (existingProduct) {
+            existingProduct.quantity += product.quantity;
+        } else {
+            cart.push(product);
+        }
+        updateCartDisplay();
+    }
+
+    // Event listener for Add to Cart buttons
+    document.querySelectorAll('.add-to-cart-icon').forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = this.closest('.product-card');
+            const productId = productCard.getAttribute('data-product-id');
+            const productName = productCard.querySelector('.product-name').textContent;
+            const productPrice = parseFloat(productCard.querySelector('.product-price').textContent.replace('₦', '').replace(',', ''));
+            const productImage = productCard.querySelector('img').getAttribute('src');
+
+            addToCart({
+                id: productId,
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                quantity: 1
+            });
+
+            // Show the cart modal
+            const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+            cartModal.show();
+        });
+    });
+
+    // Event listener for Quick View icons
+    document.querySelectorAll('.quick-view-icon').forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = this.closest('.product-card');
+            const productName = productCard.querySelector('.product-name').textContent;
+            const productPrice = productCard.querySelector('.product-price').textContent;
+            const productImage = productCard.querySelector('img').getAttribute('src');
+
+            const quickViewModalBody = document.querySelector('#quickViewModal .modal-body');
+            quickViewModalBody.innerHTML = `
+                <div class="quick-view-product">
+                    <img src="${productImage}" alt="${productName}">
+                    <h5>${productName}</h5>
+                    <p>₦${productPrice}</p>
+                </div>
+            `;
+
+            // Show the Quick View modal
+            const quickViewModal = new bootstrap.Modal(document.getElementById('quickViewModal'));
+            quickViewModal.show();
+        });
+    });
+
+    // Event listener for Remove buttons in cart
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('remove-btn')) {
+            const productId = event.target.closest('.cart-item').getAttribute('data-product-id');
+            cart = cart.filter(item => item.id !== productId);
+            updateCartDisplay();
+        }
+    });
+
+    // Event listener for quantity changes in cart
+    document.addEventListener('input', function (event) {
+        if (event.target.classList.contains('quantity-input')) {
+            const productId = event.target.closest('.cart-item').getAttribute('data-product-id');
+            const newQuantity = parseInt(event.target.value, 10);
+            const product = cart.find(item => item.id === productId);
+            if (product) {
+                product.quantity = newQuantity;
+            }
+            updateCartDisplay();
+        }
+    });
+
+    // Close cart modal button
+    document.querySelector('#cartModal .btn-close').addEventListener('click', function () {
+        const cartModal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+        cartModal.hide();
+    });
+
+    // Checkout button
+    document.querySelector('#checkout-btn').addEventListener('click', function () {
+        alert('Proceeding to checkout.');
+    });
+});
+
+// Show the modal when the page loads
+window.onload = function() {
+            const welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+            welcomeModal.show();
+        }
+
+
+        document.getElementById('loginForm').addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form data
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+
+    // Basic validation
+    if (!email || !password) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    // Prepare data for sending
+    const data = { email, password };
+
+    try {
+        // Send data to the server
+        const response = await fetch('/api/login', { // Change this URL to your login endpoint
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            // Login successful
+            alert('Login successful!');
+            window.location.href = '/dashboard'; // Redirect to a dashboard or home page
+        } else {
+            // Login failed
+            alert(`Login failed: ${result.message}`);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+    }
+});
+
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+
+        // Close all answers
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.classList.remove('open');
+        });
+
+        // Open the clicked answer if it wasn't already open
+        if (!isOpen) {
+            answer.classList.add('open');
+        }
+    });
+});
+
+
+
+        
+    </script>
+  
+</body>
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Sections -->
+            <div class="footer-section">
+                <h2 class="footer-heading">About Us</h2>
+                <p class="footer-text">At Buyit, we are committed to providing the best electronics and technology products. Discover innovative gadgets and stay ahead with the latest trends.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h2 class="footer-heading">Quick Links</h2>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2 class="footer-heading">Contact Us</h2>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@buyit.com">info@buyit.com</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2 class="footer-heading">Follow Us</h2>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Buyit. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</html>

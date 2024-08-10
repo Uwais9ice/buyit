@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Image */
+body {
+    background-image: url('background/Untitled\ design.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align container to the left */
+}
+
+/* Container Styling */
+.cover-container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Semi-transparent background */
+    margin-left: 50px;
+}
+
+/* Heading */
+.buyit-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Catchy Text */
+.catchy-text {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.see-products-btn {
+    font-size: 18px;
+    background-color: black;
+  
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Support Text */
+.support-text a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.support-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cover-container {
+        margin-left: 20px;
+        padding: 15px;
+    }
+
+    .buyit-heading {
+        font-size: 36px;
+    }
+
+    .catchy-text {
+        font-size: 18px;
+    }
+
+    .see-products-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .support-text a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cover-container {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .buyit-heading {
+        font-size: 28px;
+    }
+
+    .catchy-text {
+        font-size: 16px;
+    }
+
+    .see-products-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .support-text a {
+        font-size: 12px;
+    }
+}

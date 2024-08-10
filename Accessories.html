@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyit - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Social Media Icons -->
+            <div class="social-media-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+
+            <!-- Bootstrap Navbar for Mobile and Desktop -->
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Stylish Text Link Logo -->
+            <a href="home.html" class="logo">Buyit</a>
+         <!-- Navigation Links -->
+         <div class="nav-links custom-nav">
+            <a href="home.html" class="nav-link custom-link">Shop</a>
+            <a href="phone.html" class="nav-link custom-link">Phones</a>
+            <a href="laptops.html" class="nav-link custom-link">laptops</a>
+            <a href="home-appliances.html" class="nav-link custom-link">home-appliances</a>
+            <a href="Accessories.html" class="nav-link custom-link">Accessories</a>
+        </div>
+        
+            <!-- Search Bar and Icons -->
+            <div class="header-icons d-flex align-items-center">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Profile Icon -->
+                <div class="profile-icon ml-3" data-toggle="modal" data-target="#profileModal">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <!-- Wishlist Icon -->
+                <div class="wishlist-icon ml-3">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <!-- Cart Icon -->
+                <div class="cart-icon ml-3" data-toggle="modal" data-target="#cartModal">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!-- Breadcrumb -->
+ <nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+        </ol>
+    </div>
+</nav>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">Login / Create Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Login / Account creation form goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="checkout-btn" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Heading -->
+  <section class="shop-heading">
+    <div class="container">
+        <h1 class="heading-text">Acessories</h1>
+        <div class="filter-options">
+            <div class="sort-by">
+                <label for="sortBy">Sort By:</label>
+                <select id="sortBy" class="custom-select">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+            <div class="show-options">
+                <label for="show">Show:</label>
+                <select id="show" class="custom-select">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+        </div>
+        
+</section>
+<!-- Product Section -->
+<section id="products" class="container my-5">
+    <div class="row">
+        <!-- Example Product Card -->
+        <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="1">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.YSs30Vvai4LOq5x5JdMlWAAAAA?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">head-set bluetooth</h5>
+                    <p class="product-price">₦600,000</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Example Product Card -->
+         <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="2">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.GRefgS-DUNpGQB00a1HDzwAAAA?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Ear-bud</h5>
+                    <p class="product-price">₦500,000</p>
+                </div>
+            </div>
+        </div>
+        
+         <!-- Example Product Card -->
+         <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="3">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.m3cZz-J0YmRsgd62ZqLnFAAAAA?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">wrist-watch</h5>
+                    <p class="product-price">₦800,000</p>
+                </div>
+            </div>
+        </div>
+         <!-- Example Product Card -->
+         <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="4">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/R.1bbe796be74dca642a2b615a5ee3faa2?rik=MglQwMZo4%2fzS%2bA&pid=ImgRaw&r=0" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Smart-watch</h5>
+                    <p class="product-price">₦1000000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="5">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.m7c9uqqnn-3OSGUCfjbVYgAAAA?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Gps-Smart watch</h5>
+                    <p class="product-price">₦450,000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="6">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/R.4a50a0633e1c6dc5aad8563786a22bee?rik=ZnSgpScMXBUEeQ&riu=http%3a%2f%2fwww.gadgetreview.com%2fwp-content%2fuploads%2f2014%2f03%2fJackery-Giant-plus-High-capacity-Premium-Aluminum-Portable-Charger-12000mAh-External-Battery.jpg&ehk=sj79sCLwF5oMwP6dZ42k%2b0pRm0s31rsKZmFwdDTCnuA%3d&risl=&pid=ImgRaw&r=0" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Power-bank</h5>
+                    <p class="product-price">₦1000000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="7">
+                <div class="product-image">
+                    <img src="https://i5.walmartimages.com/seo/Mustacti-25W-PD-Fast-Charging-Mobile-Phone-Charger-5A-Fast-Charging-Head-A2031-D-Adapter-Wall-Port_330405c0-33a6-4484-a1b9-1efd4a516490.5ce5a5a76f204ef7b31c19c08728ecb8.jpeg" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Wireless-charger</h5>
+                    <p class="product-price">₦300,000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="8">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/R.e9ff4470949f9961aa9736c13db440d7?rik=oADzpeCNRRFORg&pid=ImgRaw&r=0" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Torch-light</h5>
+                    <p class="product-price">₦1500000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="9">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.NcT_QAlBUVpj9wS-a43K3wHaFs?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Led-torch-lamp</h5>
+                    <p class="product-price">₦250,000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="10">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.Nz1i2ZavmfMS-MYMT7cWaAHaHa?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">JBL-Speaker</h5>
+                    <p class="product-price">₦200,000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="11">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/R.32819b52974f1780a1329771e28c61b0?rik=YirRhbZmI6bCyw&pid=ImgRaw&r=0" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">bluetooth-speaker</h5>
+                    <p class="product-price">₦300,000</p>
+                </div>
+            </div>
+        </div>
+           <!-- Example Product Card -->
+           <div class="col-md-3 mb-4">
+            <div class="product-card" data-product-id="12">
+                <div class="product-image">
+                    <img src="https://th.bing.com/th/id/OIP.n3tXXpz5KukPS49pfd3f-AHaED?rs=1&pid=ImgDetMain" alt="Phone">
+                    <div class="product-icons">
+                        <a href="#" class="wishlist-icon fab fa-heart"></a>
+                        <a href="#" class="quick-view-icon fas fa-search"></a>
+                        <a href="#" class="add-to-cart-icon fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h5 class="product-name">Keyboard</h5>
+                    <p class="product-price">₦850,000</p>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat similar blocks for other products -->
+    </div>
+    
+    
+</section>
+<!-- Pagination -->
+<div class="pagination-container">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="phones.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="laptops.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Quick View Modal -->
+<div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm modal-md">
+        <div class="modal-content rounded-3 shadow border-light">
+            <div class="modal-header border-bottom-0 bg-light">
+                <h5 class="modal-title fs-5" id="quickViewModalLabel">Product Quick View</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-3">
+                <!-- Product Details Here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add to Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Cart Items Here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+ document.addEventListener('DOMContentLoaded', function () {
+    let cart = [];
+
+    function updateCartDisplay() {
+        const cartModalBody = document.querySelector('#cartModal .modal-body');
+        cartModalBody.innerHTML = ''; // Clear existing cart content
+
+        let totalPrice = 0; // Initialize total price
+
+        if (cart.length === 0) {
+            cartModalBody.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            cart.forEach(product => {
+                const itemTotal = product.price * product.quantity;
+                totalPrice += itemTotal; // Update total price
+
+                cartModalBody.innerHTML += `
+                    <div class="cart-item" data-product-id="${product.id}">
+                        <img src="${product.image}" alt="${product.name}" class="cart-item-image">
+                        <div class="cart-item-details">
+                            <h5>${product.name}</h5>
+                            <p>₦${product.price}</p>
+                            <p>Total: ₦${itemTotal}</p>
+                            <input type="number" value="${product.quantity}" min="1" class="quantity-input">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Display the total price
+            cartModalBody.innerHTML += `
+                <div class="cart-total">
+                    <h5>Total Price: ₦${totalPrice}</h5>
+                </div>
+            `;
+        }
+    }
+
+    function addToCart(product) {
+        const existingProduct = cart.find(item => item.id === product.id);
+        if (existingProduct) {
+            existingProduct.quantity += product.quantity;
+        } else {
+            cart.push(product);
+        }
+        updateCartDisplay();
+    }
+
+    // Event listener for Add to Cart buttons
+    document.querySelectorAll('.add-to-cart-icon').forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = this.closest('.product-card');
+            const productId = productCard.getAttribute('data-product-id');
+            const productName = productCard.querySelector('.product-name').textContent;
+            const productPrice = parseFloat(productCard.querySelector('.product-price').textContent.replace('₦', '').replace(',', ''));
+            const productImage = productCard.querySelector('img').getAttribute('src');
+
+            addToCart({
+                id: productId,
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                quantity: 1
+            });
+
+            // Show the cart modal
+            const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+            cartModal.show();
+        });
+    });
+
+    // Event listener for Quick View icons
+    document.querySelectorAll('.quick-view-icon').forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = this.closest('.product-card');
+            const productName = productCard.querySelector('.product-name').textContent;
+            const productPrice = productCard.querySelector('.product-price').textContent;
+            const productImage = productCard.querySelector('img').getAttribute('src');
+
+            const quickViewModalBody = document.querySelector('#quickViewModal .modal-body');
+            quickViewModalBody.innerHTML = `
+                <div class="quick-view-product">
+                    <img src="${productImage}" alt="${productName}">
+                    <h5>${productName}</h5>
+                    <p>₦${productPrice}</p>
+                </div>
+            `;
+
+            // Show the Quick View modal
+            const quickViewModal = new bootstrap.Modal(document.getElementById('quickViewModal'));
+            quickViewModal.show();
+        });
+    });
+
+    // Event listener for Remove buttons in cart
+    document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('remove-btn')) {
+            const productId = event.target.closest('.cart-item').getAttribute('data-product-id');
+            cart = cart.filter(item => item.id !== productId);
+            updateCartDisplay();
+        }
+    });
+
+    // Event listener for quantity changes in cart
+    document.addEventListener('input', function (event) {
+        if (event.target.classList.contains('quantity-input')) {
+            const productId = event.target.closest('.cart-item').getAttribute('data-product-id');
+            const newQuantity = parseInt(event.target.value, 10);
+            const product = cart.find(item => item.id === productId);
+            if (product) {
+                product.quantity = newQuantity;
+            }
+            updateCartDisplay();
+        }
+    });
+
+    // Close cart modal button
+    document.querySelector('#cartModal .btn-close').addEventListener('click', function () {
+        const cartModal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+        cartModal.hide();
+    });
+
+    // Checkout button
+    document.querySelector('#checkout-btn').addEventListener('click', function () {
+        alert('Proceeding to checkout.');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Sections -->
+            <div class="footer-section">
+                <h2 class="footer-heading">About Us</h2>
+                <p class="footer-text">At Buyit, we are committed to providing the best electronics and technology products. Discover innovative gadgets and stay ahead with the latest trends.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h2 class="footer-heading">Quick Links</h2>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2 class="footer-heading">Contact Us</h2>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@buyit.com">info@buyit.com</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2 class="footer-heading">Follow Us</h2>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Buyit. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</html>
